@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="icon" href="embeds/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="profile.css" />
+    <meta charset="utf-8" />
+    <meta name="author" content="Jerry Angelo T. Camacho" />
+    <meta name="keywords" content="CICT, CICT Projects, Student Projects, Projects, IT Projects, Digital Projects" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+            <header>
+                <img src="embeds/banners.png" usemap="#image-map" id="banners" />
+                <map name="image-map">
+                    <area target="_self" alt="Homepage" title="Homepage" href="index.html" onmouseover="hoverhomepage(banners);" onmouseout="unhover(banners);" coords="257,47,283,174,403,145,519,172,632,193,723,203,853,208,952,208,947,67,440,2" shape="poly">
+                    <area target="_self" alt="Profile page" title="Profile page" href="profile.html" onmouseover="hoverprofilepage(banners);" onmouseout="unhover(banners);" coords="1009,55,1042,180,1158,144,1123,22" shape="poly">
+                </map>
+            </header>
+            <div id="profilenameslate">
+                <h2>PROFILE</h2>
+            </div>
+        <div id="contents">
+            
+            <div id="content3">
+                <h3>Pinned Projects</h3>
+                <br />
+                <div id="pinned_1">
+                    <button type="button" id="removeproj">X</button><a href="project.html"><h5>CICT Projects Board</h5></a>
+                </div>
+            </div>
+            <div id="content1">
+                <h3>Personal Info</h3>
+                <br />
+                <h4>Full Name:</h4>
+                <p>Jerry Angelo T.Camacho</p>
+                <br />
+                <h4>Address:</h4>
+                <p>Brgy. Ibong Sapa, Virac, Catanduanes</p>
+                <br />
+                <h4>Age:</h4>
+                <p>19</p>
+                <br />
+                <h4>Gender:</h4>
+                <p>Male</p>
+                <br />
+                <h3>Contact Info</h3>
+                <br />
+                <h4>Email Address(es):</h4>
+                <p>jerryangelocamacho@gmail.com</p>
+                <br />
+                <h4>Contact No.:</h4>
+                <p>N/a</p>
+                <br />
+            </div>
+            <div id="content2">
+                <img alt="profile_pic.jpeg" src="embeds/profile_pic.png" />
+                <br />
+                <h4>JerryAngelo01</h4>
+                <br /> <br />
+                <h4>Account Type:</h4>
+                <h4>Student</h4>
+                <br>
+                <a href="editprofile.html"><h3>EDIT</h3></a>
+                <br>
+                <a href="login.html"><h3>Log Out</h3></a>
+            </div>
+        </div>
+    </main>
+    <script>
+        function hoverhomepage(element) {
+            element.setAttribute('src', 'embeds/banners_CICT_letters.png');
+
+        }
+        function hoverprofilepage(element) {
+            element.setAttribute('src', 'embeds/banners_profile.png')
+        }
+        function unhover(element) {
+            element.setAttribute('src', 'embeds/banners.png');
+        }
+    </script>
+</body>
+</html>

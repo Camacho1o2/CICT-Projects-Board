@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CICT Projects Board</title>
+    <link rel="icon" href="embeds/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="addproject.css" />
+    <meta charset="utf-8" />
+    <meta name="author" content="Jerry Angelo T. Camacho" />
+    <meta name="keywords" content="CICT, CICT Projects, Student Projects, Projects, IT Projects, Digital Projects" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="embeds/banners.png" usemap="#image-map" id="banners"/>
+            <map name="image-map">
+                <area target="_self" alt="Homepage" title="Homepage" href="index.html" onmouseover="hoverhomepage(banners);" onmouseout="unhover(banners);" coords="257,47,283,174,403,145,519,172,632,193,723,203,853,208,952,208,947,67,440,2" shape="poly">
+                <area target="_self" alt="Profile page" title="Profile page" href="profile.html" onmouseover="hoverprofilepage(banners);" onmouseout="unhover(banners);" coords="1009,55,1042,180,1158,144,1123,22" shape="poly">
+            </map>
+        </header>
+        <div id="project_nameslate">
+            <h2>Add a Project</h2>
+        </div>
+        <form>
+            <div id="project">
+                <label for="projectname">What is the name of your project?</label>
+                <br />
+                <input type="text" id="projectname" />
+                <br />
+                <label for="projectname">What is the status of your project?</label>
+                <br />
+                <input type="text" id="projectname" />
+                <br /> <br />
+                <textarea placeholder="What is your Project about?.."></textarea>
+                <br /> <br />
+                <label for="accessibility">Is the project accessible to the public or not?</label>
+                <br />
+                <div id="publicaccessed">
+                    <input type="radio" id="publicaccess" />
+                    <label for="publicaccess">Public Acess</label>
+                </div>
+                <div id="privateaccessed">
+                    <input type="radio" id="privateaccess" name="projectaccess" />
+                    <label for="privateaccess">Private Access</label>
+                </div>
+                <br />
+                <label for="projectpassword">What is the password to access your project?</label>
+                <br />
+                <input type="password" id="projectpassword" />
+                <br /><br />
+                <label for="projectpfp">What is the icon/logo of your project?</label>
+                <br />
+                <input type="file" id="projectpfp" name="projectaccess" />
+                <br /> <br />
+                <label for="projectfiles">Your Work:</label>
+                <br />
+                <input type="file" id="projectfiles" />
+                <br /> <br />
+                <button type="submit" id="post">POST</button>
+                <br />
+            </div>
+        </form>
+
+    </main>
+    <script>
+        function hoverhomepage(element) {
+            element.setAttribute('src', 'embeds/banners_CICT_letters.png');
+        }
+        function hoverprofilepage(element) {
+            element.setAttribute('src', 'embeds/banners_profile.png')
+        }
+        function unhover(element) {
+            element.setAttribute('src', 'embeds/banners.png');
+        }
+    </script>
+</body>
+</html>

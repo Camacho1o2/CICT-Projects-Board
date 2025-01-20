@@ -1,0 +1,190 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #20678f;
+    opacity: 1;
+    background-image: radial-gradient(#0c0c0c 1.05px, transparent 1.05px), radial-gradient(#0c0c0c 1.05px, #20678f 1.05px);
+    background-size: 42px 42px;
+    background-position: 0 0,21px 21px;
+}
+
+header img {
+    width: 100%;
+}
+
+main {
+    border: 15px ridge #DEB888;
+    padding-bottom: 3%;
+    position: relative;
+    min-height: 90vh;
+    background-color: #1668b4;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #000000 25%, transparent 25%), linear-gradient(225deg, #000000 25%, transparent 25%), linear-gradient(45deg, #000000 25%, transparent 25%), linear-gradient(315deg, #000000 25%, #1668b4 25%);
+    background-position: 4px 0, 4px 0, 0 0, 0 0;
+    background-size: 4px 4px;
+    background-repeat: repeat;
+}
+#login_name {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 2.5em;
+    background-image: url("embeds/blue_sticky_note.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+form {
+    display: block;
+    margin: auto;
+    background-image: url("embeds/register_paper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 55%;
+    padding: 7%;
+    padding-left:10%;
+    padding-top: 14%;
+}
+form h3{
+    background-image: url("embeds/blue_sticky_note.png");
+    background-repeat: no-repeat;
+    padding: 2%;
+    margin-left: 0.3em;
+    width: 40%;
+}
+form input{
+    border:0;
+    outline:0;
+    border-bottom:1px solid black;
+    background:none;
+    margin-left:5%;
+    width:50%;
+}
+#accounttype{
+    margin:1%;
+    width:5%;
+}
+form button {
+    display:block;
+    margin:auto;
+    padding:1%;
+    padding-left:5%;
+    padding-right:5%;
+    background-color: #17d7d7;
+    outline-color: #1668b4;
+    border-color: #1668b4;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 13px;
+    }
+    #login_name{
+        width:87%;
+    }
+    form{
+        width:80%;
+        padding-top: 30%;
+        background-size:cover;
+        background-position: center;
+        background-repeat:repeat-y;
+        
+    }
+    form input{
+        width:70%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body{
+        font-size: 14px;
+    }
+    #login_name{
+        width:65%;
+    }
+    form{
+        width:70%;
+        padding-top: 25%;
+        background-size:cover;
+        background-position: center;
+        background-repeat:repeat-y;
+        
+    }
+    form input{
+        width:70%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    body{
+        font-size: 17px;
+    }
+    #login_name{
+        width:65%;
+    }
+    form{
+        width:70%;
+        padding-top: 25%;
+        background-position: left center;
+        padding-left:13%;
+        background-size:cover;
+    }
+    form input{
+        width:60%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body{
+        font-size: 18px;
+    }
+    #login_name {
+        display: block;
+        margin: auto;
+        width: 65%;
+        height: 2.5em;
+        background-image: url("embeds/blue_sticky_note.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    form {
+        display: block;
+        margin: auto;
+        background-image: url("embeds/register_paper.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+        width: 65%;
+        padding: 7%;
+        padding-left:12%;
+        padding-top: 24%;
+    }
+}
+ 
+@media only screen and (min-width: 1200px) {
+    body{
+        font-size: 19px;
+    }
+    #login_name{
+        width:60%;
+    }
+    form{
+        width:60%;
+        padding-top: 25%;
+        background-size: 100%;
+        background-position: left center;
+        background-size:cover;
+    }
+    form input{
+        width:55%;
+    }
+}

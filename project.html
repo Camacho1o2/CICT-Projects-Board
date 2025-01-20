@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CICT Projects Board</title>
+    <link rel="icon" href="embeds/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="project.css" />
+    <meta charset="utf-8" />
+    <meta name="author" content="Jerry Angelo T. Camacho" />
+    <meta name="keywords" content="CICT, CICT Projects, Student Projects, Projects, IT Projects, Digital Projects" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="embeds/banners.png" usemap="#image-map" id="banners"/>
+            <map name="image-map">
+                <area target="_self" alt="Homepage" title="Homepage" href="index.html" onmouseover="hoverhomepage(banners);" onmouseout="unhover(banners);" coords="257,47,283,174,403,145,519,172,632,193,723,203,853,208,952,208,947,67,440,2" shape="poly">
+                <area target="_self" alt="Profile page" title="Profile page" href="profile.html" onmouseover="hoverprofilepage(banners);" onmouseout="unhover(banners);" coords="1009,55,1042,180,1158,144,1123,22" shape="poly">
+            </map>
+        </header>
+        <div id="project_nameslate">
+            <h2>CICT Project Board</h2>
+        </div>
+    <div id="contents">
+        <div id="main">
+            <img src="storage/websitehomepage.png" id="mainimg" />
+            <h3>Description</h3>
+            <p>
+                A website dedicated for the students of CICT which grants the features of letting them showcase their creations to the
+                public. Following the theme of a bulletin board, content is shown in papers, sticky notes, banners, etc. It has the colour scheme of
+                yellow and blue which are seen in the logo of CICT in CatSU. 
+            </p>
+            <br>
+            <h3>How to Use</h3>
+            <ol>
+                <li>Upon entering the website, users are prompt to log-in with their account
+                    or create one for their own.</li>
+                <li>After successfully doing so, they are immediately taken to the main homepage of the website where the
+                    posted projects are shown. On the top of the website are banners which the users can interact. Clicking the banners with letters can
+                    bring them to the homepage from any other webpage within the website while clicking the orange banner with an account icon
+                    will bring them to their profile page.</li>
+                <li>If the user is a CICT student, they can post and share their project by clicking the empty slot in the homepage. After which,
+                    their post will be seen in the homepage. They can set whether or not the files of their project is accessible in public or not.
+                    If the files are private, viewers will have to request the password from the student to access them.</li>
+            <ol>
+        </div>
+        <div id="side">
+            <img src="embeds/icon.png" />
+            <br />
+            <h4>Developer: </h4>
+            <a href="profile.html">JerryAngelo01</a>
+            <br><br>
+            <h4>Status:</h4>
+            <p>Incomplete</p>
+            <br />
+            <button type="button">Pin Project</button>
+            <br> <br>
+            <button type="button">File</button>
+        </div>
+    </div>
+    </main>
+    <script>
+        function hoverhomepage(element) {
+            element.setAttribute('src', 'embeds/banners_CICT_letters.png');
+
+        }
+        function hoverprofilepage(element) {
+            element.setAttribute('src', 'embeds/banners_profile.png')
+        }
+        function unhover(element) {
+            element.setAttribute('src', 'embeds/banners.png');
+        }
+    </script>
+</body>
+</html>
